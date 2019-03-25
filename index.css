@@ -1,5 +1,6 @@
 body {
-    background-color: blueviolet;
+    background-color: #d9f7f9;
+    color:white;
 }
 
 h1 {
@@ -22,4 +23,23 @@ h1 {
 
 .showing {
     display: block; 
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 0;
+    }
+    from {
+        opacity: 1;
+    }
+}
+
+.bigImage {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+    animation: fadeIn, 3s, ease-in-out ;
 }
